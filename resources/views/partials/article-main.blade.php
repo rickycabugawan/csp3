@@ -78,7 +78,7 @@
 			@foreach($this_article->comment->sortBy('created_at') as $comment)
 			<div class="comment-box comment-item mb-2" id="cmt{{$comment->id}}">
 					<div class="comment-item image-container border border-dark">
-						<img class="comment-item image img-fluid" src="images/account.png">
+						<img class="comment-item image img-fluid" src="/images/account.png">
 					</div>
 					<div class="comment-item card">
 					  <div class="comment-item card-header">
