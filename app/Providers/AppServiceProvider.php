@@ -61,6 +61,9 @@ class AppServiceProvider extends ServiceProvider
             'most_recent_comments',
             'random_posts',
             'archives'));
+        if($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 
     /**
