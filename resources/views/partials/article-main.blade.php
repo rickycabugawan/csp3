@@ -32,7 +32,7 @@
 	</div>
 	<div class="article author-box p-3 my-4">
 		<div class="author-box author-image-container mr-3 bg-light">
-			<img class="author-box author-image" src="{{/images/account.png}}">
+			<img class="author-box author-image" src="/images/account.png">
 		</div>
 		<div class="author-box box-name mt-2">About <span class="author-name">{{strtok($this_article->user->name," ")}}</span></div>
 		<div class="author-box about mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -78,7 +78,7 @@
 			@foreach($this_article->comment->sortBy('created_at') as $comment)
 			<div class="comment-box comment-item mb-2" id="cmt{{$comment->id}}">
 					<div class="comment-item image-container border border-dark">
-						<img class="comment-item image img-fluid" src="{{/images/account.png}}">
+						<img class="comment-item image img-fluid" src="images/account.png">
 					</div>
 					<div class="comment-item card">
 					  <div class="comment-item card-header">
