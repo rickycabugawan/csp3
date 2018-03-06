@@ -32,7 +32,7 @@
 	</div>
 	<div class="article author-box p-3 my-4">
 		<div class="author-box author-image-container mr-3 bg-light">
-			<img class="author-box author-image" src="{{/images/account.png)}}">
+			<img class="author-box author-image" src="{{/images/account.png}}">
 		</div>
 		<div class="author-box box-name mt-2">About <span class="author-name">{{strtok($this_article->user->name," ")}}</span></div>
 		<div class="author-box about mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
