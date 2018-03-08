@@ -120,7 +120,7 @@ $(document).on('click','.comment-delete',function(){
   var commentId = $(this).data('index');
   // console.log(commentId + "<br>");
   $.ajax({
-        type:   'DELETE',
+        type:   'POST',
         url:    '/comments/' + commentId,
         success: function(){
             $(thisInClick).closest('.comment-box.comment-item').fadeOut();
@@ -137,7 +137,7 @@ $(document).on('click','.reply-delete',function(){
   var commentId = $(this).data('index-comment');
   // console.log(commentId + "<br>");
   $.ajax({
-        type:   'DELETE',
+        type:   'POST',
         url:    '/replies/' + replyId,
         success: function(){
             $(thisInClick).closest('.comment-box.reply-item').fadeOut();
