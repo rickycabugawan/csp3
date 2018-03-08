@@ -34,7 +34,7 @@ class ReplyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storeReply(Request $request)
     {
         $new_reply = new Reply();
         $new_reply->user_id = Auth::user()->id;
@@ -83,9 +83,9 @@ class ReplyController extends Controller
      * @param  \App\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Reply $reply)
+    public function destroyReply($id)
     {
-        $delete = Reply::find($reply->id);
+        $delete = Reply::find($id);
         $delete->delete();
     }
 }
