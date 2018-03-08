@@ -34,7 +34,7 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storeComment(Request $request)
     {
         $new_comment = new Comment();
         $new_comment->user_id = Auth::user()->id;
@@ -83,9 +83,9 @@ class CommentController extends Controller
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroyComment($id)
     {
-        $delete = Comment::find($comment->id);
+        $delete = Comment::find($id);
         $delete->delete();
     }
 }
